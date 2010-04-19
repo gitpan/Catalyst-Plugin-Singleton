@@ -2,8 +2,9 @@ package Catalyst::Plugin::Singleton;
 
 use strict;
 use Scalar::Util;
+use MRO::Compat;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 *context = \&instance;
 
@@ -16,7 +17,7 @@ sub instance {
 
 sub prepare {
     my $class   = shift;
-    my $context = $class->NEXT::prepare(@_);
+    my $context = $class->next::method(@_);
 
     {
         no strict 'refs';

@@ -1,14 +1,21 @@
 ---
-name: Catalyst-Plugin-Singleton
-version: 0.02
+abstract: 'Singleton to context'
 author:
-  - Christian Hansen, C<ch@ngmedia.com>
-abstract: Singleton to context
+  - 'Christian Hansen, C<ch@ngmedia.com>'
+configure_requires:
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3601'
 license: perl
-requires:
-  Scalar::Util: 0
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Catalyst-Plugin-Singleton
 provides:
   Catalyst::Plugin::Singleton:
     file: lib/Catalyst/Plugin/Singleton.pm
-    version: 0.02
-generated_by: Module::Build version 0.26
+    version: 0.03
+requires:
+  Scalar::Util: 0
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.03
