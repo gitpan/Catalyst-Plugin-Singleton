@@ -4,7 +4,7 @@ use strict;
 use Scalar::Util;
 use MRO::Compat;
 
-our $VERSION = '0.03';
+our $VERSION = '0.1';
 
 *context = \&instance;
 
