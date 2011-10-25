@@ -4,7 +4,7 @@ use strict;
 use Scalar::Util;
 use MRO::Compat;
 
-our $VERSION = '0.1';
+our $VERSION = '0.2';
 
 *context = \&instance;
 
@@ -33,7 +33,7 @@ __END__
 
 =head1 NAME
 
-Catalyst::Plugin::Singleton - Singleton to context
+Catalyst::Plugin::Singleton - DEPRECATED - Singleton to context
 
 =head1 SYNOPSIS
 
@@ -46,7 +46,9 @@ Catalyst::Plugin::Singleton - Singleton to context
 
 =head1 DESCRIPTION
 
-Singleton accessors to context.
+DEPRECATED - Singleton accessors to context.
+
+DO NOT USE IN NEW CODE!
 
 =head1 METHODS
 
